@@ -3,61 +3,34 @@ import json
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = 'http://73494d60-f2ba-4c11-bd5d-f1210cf14b0f.southcentralus.azurecontainer.io/score'
+scoring_uri = 'http://5be99864-5c61-4bef-8e54-dff484451595.westeurope.azurecontainer.io/score'
 # If the service is authenticated, set the key or token
-key = 'PuhAibMQRhjXjRDnbKkSXlEr13UzJQEp'
+key = 'QDO94x11wdojWdJ3VXaG0tas2Iti9HDV'
 
 # Two sets of data to score, so we get two results back
-data = {"Inputs": {
-	"data":
-        [
-          {
-            "age": 17,
-            "campaign": 1,
-            "cons.conf.idx": -46.2,
-            "cons.price.idx": 92.893,
-            "contact": "cellular",
-            "day_of_week": "mon",
-            "default": "no",
-            "duration": 971,
-            "education": "university.degree",
-            "emp.var.rate": -1.8,
-            "euribor3m": 1.299,
-            "housing": "yes",
-            "job": "blue-collar",
-            "loan": "yes",
-            "marital": "married",
-            "month": "may",
-            "nr.employed": 5099.1,
-            "pdays": 999,
-            "poutcome": "failure",
-            "previous": 1
-          },
-          {
-            "age": 87,
-            "campaign": 1,
-            "cons.conf.idx": -46.2,
-            "cons.price.idx": 92.893,
-            "contact": "cellular",
-            "day_of_week": "mon",
-            "default": "no",
-            "duration": 471,
-            "education": "university.degree",
-            "emp.var.rate": -1.8,
-            "euribor3m": 1.299,
-            "housing": "yes",
-            "job": "blue-collar",
-            "loan": "yes",
-            "marital": "married",
-            "month": "may",
-            "nr.employed": 5099.1,
-            "pdays": 999,
-            "poutcome": "failure",
-            "previous": 1
-          },
-      ]
-    }
+data =  {
+  "Inputs": {
+    "data": [
+      {
+        "Column2": "example_value",
+        "JoiningYear": 2017,
+        "PaymentTier": 2,
+        "Age": 33,
+        "ExperienceInCurrentDomain": 3,
+        "Education_Masters": 1,
+        "Education_PHD": 0,
+        "Gender_Male": 1,
+        "City_New Delhi": 1,
+        "City_Pune": 0,
+        "EverBenched_Yes": 0
+      }
+    ]
+  },
+  "GlobalParameters": {
+    "method": "predict"
+  }
 }
+
 # Convert to JSON string
 input_data = json.dumps(data)
 with open("data.json", "w") as _f:
