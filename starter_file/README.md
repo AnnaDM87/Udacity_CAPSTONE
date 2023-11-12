@@ -113,10 +113,20 @@ _Result_
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+Because of company policy I cannot upload the video on youtube neither talk. You can find following the text for my video.
+[00:00-00:10]I used the Employee kaggle dataset https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset. This dataset can be used for various HR and workforce-related analyses, including employee retention, salary structure assessments, diversity and inclusion studies, and leave pattern analyses. Researchers, data analysts, and HR professionals can gain valuable insights from this dataset.
+[00:10-00:22] To easily access to it by azure, I uploaded it into my github. I will use the raw data here.
+[00:23-00:31] From AZURE Home, click on compute, then select Jupyter. Here you can see the notebook I used for training my models.
+[00:32-00:42] This one is the AutoML notebook.
+[00:43-00:51] This one the hyperdrive tuning model.
+[00:52-00:58]From Home, select models. Here you can see the two model I trained.
+[00:59-01:01]Select the Hyperdrive model, clicking on created by job link.
+[01:02-01:10] The page will show the stats of the best trained model. In this case we can see the accuracy of about 73&, the parameters are C=50, and max iterations 200.
+[01:11-01-15] Go back to Models, and select the automl model
+[01:16:01:36]The page will show the stats of the best model trained model. In this case we see the accuracy is about 84%.
+[01:37-01:50]Since the model trianed by using automl ahs the best accuracy, I deployed that mode. We can see the deployed model by selecting endpoints on the azure navigation bar.
+[01:51-02:06] Let's test the endpoint. To test the endpoint I used the file endopoint.py. To connect to the deployed model, I provided teh rest url and the primary key. As a test I used the first two records in the dataset.
+[02:06-02:36] To test it, open gitbash. Move to the directory containing the file endpoint.py. Write python endpoint.py and let's see the result.
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
