@@ -103,12 +103,13 @@ Following you can see the model deployed in azure. I enbaled the application ins
 
 
 _Deployed model_
-
+![deployed model](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/deploymodel.png?raw=true)
 
 To test the model I used the script [endpoint.py](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/endpoint.py). In the file, I used as example the first two records in teh test set.
-The result is in the next image
 
 
+
+![endpoint](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/endpoint.png?raw=true)
 
 
 ## Screen Recording
