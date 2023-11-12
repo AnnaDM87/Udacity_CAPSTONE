@@ -107,7 +107,7 @@ _Deployed model_
 To test the model I used the script [endpoint.py](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/endpoint.py). In the file, I used as example the first two records in the test set.
 
 _Example_
-
+![example](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/example.png?raw=true)
 _Result_
 ![endpoint](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/endpoint.png?raw=true)
 
