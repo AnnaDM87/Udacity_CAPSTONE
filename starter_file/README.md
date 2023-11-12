@@ -65,28 +65,50 @@ The following options were set:
 
 As can be seen in the Run Details screenshot, the top performing model was a VotingEnsemble with 87% accuracy.
 _Run Deatils Screenshot_
-
+![Deatils Screenshot](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/run_details_automl.png?raw=true)
+![best metric](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/autml_metric_chart.png?raw=true)
 _Best Model Id Scrrenshot_
+![best_run](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/best_run_automl.png?raw=true)
 
+![best_model](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/best_model_automl.png?raw=true)
+![best_model2](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/best_model_png_automl.png?raw=true)
 
 ## Hyperparameter Tuning
-[hyperparameter_tuning.ipynb](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/hyperparameter_tuning.ipynb)
+[hyperparameter_tuning.ipynb](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/hyperparameter_tuning.ipynb)  
 As the task is binary classification, I chose to use Scikit-Learn's logistic regression for hyperparameter tuning.
 The parameters I chose to tune are C: the inverse of the regularization strength; solver: what algorithm is used for optimization; and, max_iter: max number of iterations to take for the solver to converge.
 C has a default value of 1. For the sampler I used the discrete option 'choice' with 1 multiplied and divided by two powers of 10. Choice was used instead of a continuous sampler to ensure a large variation in the possible regularization strengths used.
 Max_iter has a default value of 100. For the sample space I used choice from 50 to 300 in incriments of 50 from 50 to 100, then by 100.
-![immagine](https://github.com/AnnaDM87/Udacity_CAPSTONE/assets/22540529/e5dc9f45-fa20-4986-b9af-b3bd2351bcf0)
+
 
 
 
 ### Results
 The best hypedrive model scored an accuracy of 72 %, C =50, and max_iterations=200
 _Run Deatils Screenshot_
+![run details](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/run_details_hyper.png?raw=true)
 
+![run_details2](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/run_details_hyper_2.png?raw=true)
+
+
+![metric](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/results_hyper.png?raw=true)
+![immagine](https://github.com/AnnaDM87/Udacity_CAPSTONE/assets/22540529/e5dc9f45-fa20-4986-b9af-b3bd2351bcf0)
 _Best Model Id Scrrenshot_
 
 _hypedrive summary_ 
+![run_sumamry](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/screenshot/hyperdrive_sumamry.png?raw=true)
 ## Model Deployment
+Deployment is about delivering a trained model into production so that it can be consumed by others. In Azure, deploying the best model will allow it to interact with the HTTP API service and interact with the model by sending data over POST requests. In this project, I have deployed the model into a production environment using Azure Container Instance (ACI). ACI offers the fastest and simplest way to run a container without having to manage any virtual machines and without having to adopt a higher-level service. Also, authentication is enabled to prevent unauthorized access.
+Following you can see the model deployed in azure. I enbaled the application insigths by checking the option while deploying the model
+
+
+_Deployed model_
+
+
+To test the model I used the script [endpoint.py](https://github.com/AnnaDM87/Udacity_CAPSTONE/blob/main/starter_file/endpoint.py). In the file, I used as example the first two records in teh test set.
+The result is in the next image
+
+
 
 
 ## Screen Recording
