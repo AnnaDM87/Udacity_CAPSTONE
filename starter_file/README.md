@@ -113,7 +113,7 @@ _Result_
 
 
 ## Screen Recording
-[videp](https://www.youtube.com/watch?v=UUSpDCAu-VY&feature=youtu.be)
+[videp](https://www.youtube.com/watch?v=UUSpDCAu-VY&feature=youtu.be)  
 [00:00-00:10]I used the Employee kaggle dataset https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset. This dataset can be used for various HR and workforce-related analyses, including employee retention, salary structure assessments, diversity and inclusion studies, and leave pattern analyses. Researchers, data analysts, and HR professionals can gain valuable insights from this dataset.  
 [00:10-00:22] To easily access to it by azure, I uploaded it into my github. I will use the raw data here.  
 [00:23-00:31] From AZURE Home, click on compute, then select Jupyter. Here you can see the notebook I used for training my models.  
